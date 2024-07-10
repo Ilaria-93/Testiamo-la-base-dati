@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: Testiamo la base dati
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: testdb
+    password: psw1234
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
